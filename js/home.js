@@ -10,7 +10,12 @@ if(pinNumberInput==='1234' && addMoneyNumber>0)
    
    const newBalance =  balanceNumber + addMoneyNumber ;
    document.getElementById('account-balance').innerText = newBalance;
-   console.log(newBalance)
+   
+   // add to history
+   const p = document.createElement('p')
+   p.innerText = `Added: ${addMoneyNumber} tk. balance: ${balanceNumber}`
+   
+   document.getElementById('transaction-container').appendChild(p)
 }else{
     alert('wrong pin or invalid input')
 }
