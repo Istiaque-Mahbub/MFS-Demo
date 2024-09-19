@@ -13,7 +13,7 @@ if(pinNumberInput==='1234' && addMoneyNumber>0)
    
    // add to history
    const p = document.createElement('p')
-   p.innerText = `Added: ${addMoneyNumber} tk. balance: ${balanceNumber}`
+   p.innerText = `Added: ${addMoneyNumber} tk. balance: ${newBalance}`
    
    document.getElementById('transaction-container').appendChild(p)
 }else{
