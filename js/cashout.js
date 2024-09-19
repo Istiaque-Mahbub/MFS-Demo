@@ -9,10 +9,13 @@ document.getElementById('btn-cash-out').addEventListener('click',function(event)
 
     if(cashOutPIn==='1234' && balanceNumber>= cashOutNumber)
     {
-        
-        
         const newBalance = balanceNumber - cashOutNumber;
         document.getElementById('account-balance').innerText = newBalance;
+
+        const p = document.createElement('p')
+   p.innerText = `Cash Out: ${cashOutNumber} tk. balance: ${newBalance}`
+   
+   document.getElementById('transaction-container').appendChild(p)
         
 
     }else{

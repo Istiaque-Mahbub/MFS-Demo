@@ -5,6 +5,7 @@ const pinNumberInput = document.getElementById('input-pin-number').value;
 const balance = document.getElementById('account-balance').innerText;
 const balanceNumber = Number(balance);
 const addMoneyNumber = Number(addMoneyInput);
+
 if(pinNumberInput==='1234' && addMoneyNumber>0)
 {
    
